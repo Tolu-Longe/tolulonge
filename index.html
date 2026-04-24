@@ -135,7 +135,7 @@
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>I am open to opportunities focused on financial modelling, quantitative analysis, and data-driven research. Whether you are looking to collaborate, hire, or connect, feel free to reach out. I aim to respond promptly and look forward to meaningful conversations.</p>
-							<form method="post" action="https://formspree.io/f/mwvayrbn">
+							<form id="contact-form" method="POST"action="https://formspree.io/f/mwvayrbn">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -151,9 +151,13 @@
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Submit" /></li>
-								</ul>
+									 <li><input type="submit" value="Send Message" /></li>
+  </ul>
 							</form>
+							<!-- Success Message -->
+<p id="form-status" style="display:none; color:#4CAF50; margin-top:10px;">
+  ✅ Message sent successfully. I will get back to you shortly.
+</p>
 							<ul class="contact">
 								<li class="icon solid fa-home">
 									Tolu Longe<br />
@@ -181,6 +185,39 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<script>
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
 
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.style.display = "block";
+        status.style.color = "#4CAF50";
+        status.textContent = "✅ Message sent successfully. I’ll get back to you shortly.";
+        form.reset();
+      } else {
+        status.style.display = "block";
+        status.style.color = "red";
+        status.textContent = "❌ Something went wrong. Try again.";
+      }
+    }).catch(() => {
+      status.style.display = "block";
+      status.style.color = "red";
+      status.textContent = "❌ Network error. Try again.";
+    });
+
+  });
+</script>
 	</body>
 </html>
