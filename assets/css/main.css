@@ -4158,3 +4158,290 @@ input, select, textarea {
   padding: 4em 0 2em 0 !important;
   min-height: auto !important;
 }
+
+#banner {
+  padding: 2em 0 1em 0 !important;
+  min-height: auto !important;
+}
+
+#projects {
+  padding: 2em 0 !important;
+}
+
+#about p {
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+#two p {
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+#three p {
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+#footer {
+  padding: 1em 0 !important;
+}
+
+h2.major {
+  margin-bottom: 0.6em !important;
+}
+
+p {
+  margin-bottom: 1em !important;
+}
+#banner h1 {
+  font-size: 2.2em;
+}
+
+#banner {
+  padding: 2em 0 1em 0 !important;
+  text-align: center;
+}
+
+#banner h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.4em;
+  letter-spacing: 1px;
+}
+
+#banner .tagline {
+  font-size: 1em;
+  opacity: 0.85;
+  margin-bottom: 1.5em;
+}
+
+#banner .actions {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+#banner .button {
+  padding: 0.7em 1.5em;
+  font-size: 0.9em;
+}
+
+#banner h1 {
+  font-weight: 600;
+}
+
+#header {
+  background: rgba(20, 25, 40, 0.85);
+  backdrop-filter: blur(0.35px);
+}
+
+#header h1 a {
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+#header nav a {
+  font-size: 0.85em;
+}
+
+.image img {
+  transition: transform 0.4s ease;
+}
+
+.image:hover img {
+  transform: scale(1.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.2px;
+}
+
+h1, h2, h3 {
+  letter-spacing: 0.5px;
+}
+
+.inner {
+  max-width: 1100px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 0.95em;
+}
+
+.features article {
+  background: rgba(255,255,255,0.02);
+  border-radius: 10px;
+  padding: 1.5em;
+  transition: all 0.3s ease;
+}
+
+.features article:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.04);
+}
+
+.button.primary {
+  background: #5a6cff;
+  border: none;
+}
+
+.button.primary:hover {
+  background: #6f80ff;
+}
+
+.image img {
+  border-radius: 8px;
+}
+
+#three .content {
+  text-align: left;
+}
+
+#three .content p {
+  text-align: justify;
+}
+
+#two .content {
+  text-align: left;
+}
+
+#two .content p {
+  text-align: justify;
+}
+
+#about .content {
+  text-align: left;
+}
+
+#about .content p {
+  text-align: justify;
+}
+
+#projects .content {
+  text-align: left;
+}
+
+#projects .content p {
+  text-align: justify;
+}
+
+#certifications ul li {
+  margin-bottom: 0.8em;
+  font-size: 0.95em;
+}
+
+#certifications strong {
+  color: #ffffff;
+}
+
+#certifications {
+  padding: 2em 0 !important;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2em;
+}
+
+.cert-item {
+  background: rgba(255,255,255,0.02);
+  padding: 1em;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.cert-item:hover {
+  background: rgba(255,255,255,0.05);
+  transform: translateY(-3px);
+}
+
+.cert-item strong {
+  display: block;
+  font-size: 0.95em;
+}
+
+.cert-item span {
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+#certifications {
+  padding-top: 0em !important;
+  padding-bottom: 0.5em !important;
+}
+
+#certifications .inner {
+  padding-top: 0 !important;
+}
+
+#certifications h2.major {
+  margin-bottom: 1.2em;
+}
+
+.wrapper {
+  margin-bottom: 0 !important;
+}
+
+#certifications {
+  padding: 1.0em 0 1.5em 0 !important;
+}
+
+.contact ul li .icon {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.contact ul li:hover .icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-bottom: 1em;
+}
+
+.contact ul li .icon {
+  font-size: 0.9em;
+  opacity: 0.75;
+  transition: all 0.2s ease;
+}
+
+.contact ul li:hover .icon {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.contact ul li span,
+.contact ul li a {
+  font-size: 0.95em;
+}
+
+.contact ul li a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.contact ul li a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+#footer {
+  padding: 2.5em 0 !important;
+}
+
+.contact ul li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
